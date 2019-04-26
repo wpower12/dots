@@ -1,0 +1,16 @@
+# List of the locations each dot file should be symlinked to.
+
+bash_aliases:
+	- Stays in this directory. bashrc looks here for it.
+
+bashrc:
+	- To users home directory:
+	- ln -s ~/.dots/bashrc ~/.bashrc
+
+config_i3
+	- To i3's config folder
+	- ln -s ~/.dots/config_i3 ~/.config/i3/config
+
+config_i3status
+	- To i3's config folder
+	- ln -s ~/.dots/config_i3 ~/.config/i3/config
