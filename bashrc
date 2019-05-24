@@ -82,7 +82,7 @@ fi
 
 ### Path Changes
 # random apps
-export PATH="~/anaconda3/bin:$PATH"  # commented out by conda initialize
+# export PATH="~/.misc/anaconda3/bin/:$PATH"  # commented out by conda initialize
 export PATH="~/.misc/gephi-0.9.2/bin:$PATH"
 # Quick Start Scripts
 export PATH="~/.config/i3/layout_scripts:$PATH"
@@ -92,3 +92,18 @@ export PATH="~/.bin:$PATH"
 ### Use Sublime for sudoedit
 export SUDO_EDITOR=/usr/bin/subl
 export EDITOR=/usr/bin/subl
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/wpower3/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/wpower3/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/wpower3/anaconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/wpower3/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

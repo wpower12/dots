@@ -6,11 +6,18 @@
 # ß
 # If the above line is not correctly displayed, fix your editor first!
 
+# Colors
+# set $greyred "#9e2424"
+
 general {
         output_format = "i3bar"
-        colors = false
+        colors = true
         interval = 1
         markup = "pango"
+
+        color_good     = "#0f7f0f"
+        color_degraded = "#a3a013"
+        color_bad      = "#9e2424"
 }
 
 order += "volume master"
@@ -37,6 +44,8 @@ battery all {
         status_bat = " "
         format = "%status %percentage"
         integer_battery_capacity = true
+        low_threshold = 20
+
 }
 
 tztime local {

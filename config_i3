@@ -64,7 +64,7 @@ set $ws4 "4: 4 "
 set $ws5 "5: 5 "
 set $ws6 "6: 6 "
 set $ws7 "7: 7 "
-set $ws8 "8: 8 "
+set $ws8 "8:  "
 set $ws9 "9:  "
 set $ws10 "10:  "
 
@@ -130,8 +130,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
+##### BARRRRRRRRRR
 bar {
         status_command i3status
         position top
@@ -157,10 +156,12 @@ gaps inner 4
 gaps outer 1
 
 # Mult Buttons
+set $sink_id 0
+
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink_id +5% #increase sound volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink_id -5% #decrease sound volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink_id toggle # mute sound
 
 # Touch Pad config
 # Touch-Tap Enable
@@ -170,3 +171,7 @@ exec xinput set-prop 12 311 1
 
 # Random Background on Start
 exec --no-startup-id feh --randomize --bg-fill ~/Pictures/Wallpapers/*
+bindsym $mod+Shift+w exec --no-startup-id feh --randomize --bg-fill ~/Pictures/Wallpapers/*
+
+
+workspace_auto_back_and_forth yes

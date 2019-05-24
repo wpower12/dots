@@ -2,10 +2,13 @@
 
 ### Application/Workflow shortcuts
 alias jnb='exec jupyter notebook'
-alias pge='source activate pygame_env'      # conda env for pygame development
-alias praw='source activate penv'			# conda env for working with PRAW
+alias pge='conda activate pygame_env'      # conda env for pygame development
+alias praw='conda activate penv'		   # conda env for working with PRAW
+alias torch='cd ~/Documents/Projects/learntorch; conda activate torch; shortterm; subl .; clear;'
 
-### 'typical' ls aliases
+alias dots='subl ~/.dots'	# For editing all the things.
+
+### 'typical' ls aliases	
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
@@ -19,5 +22,6 @@ alias shortterm='export PROMPT_DIRTRIM=1'
 
 
 ### Project Workspace setup
-alias snp='cd Documents/School/CIS5524\ -\ SN/FinalProject/; praw; shortterm; clear'
+alias snp='cd Documents/School/CIS5524-SN/FinalProject/; praw; shortterm; clear'
+alias alt='cd Documents/Projects/alterm/; shortterm; subl .; clear'
 
