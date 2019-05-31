@@ -21,7 +21,12 @@ alias sr='ffmpeg -f x11grab  -s 1366x768 -i :0.0 -r 25 -vcodec libx264  output.m
 alias shortterm='export PROMPT_DIRTRIM=1'
 
 
+### Activating Monitors
+alias mon_office='xrandr --output HDMI-0 --auto --right-of eDP-1-1' # At ZO Office (Temple)
+
 ### Project Workspace setup
 alias snp='cd Documents/School/CIS5524-SN/FinalProject/; praw; shortterm; clear'
 alias alt='cd Documents/Projects/alterm/; shortterm; subl .; clear'
+
+
 
