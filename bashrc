@@ -1,5 +1,5 @@
-# ~/.bashrc: executed by bash(1) for non-login shells.
 
+# ~/.bashrc: executed by bash(1) for non-login shells.
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -92,6 +92,7 @@ export PATH="~/.bin:$PATH"
 ### Use Sublime for sudoedit
 export SUDO_EDITOR=/usr/bin/subl
 export EDITOR=/usr/bin/subl
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/wpower3/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
@@ -106,4 +107,3 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-

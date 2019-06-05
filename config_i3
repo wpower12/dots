@@ -169,7 +169,7 @@ gaps inner 4
 gaps outer 1
 
 # Mult Buttons
-set $sink_id 1 
+set $sink_id 0
 
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink_id +5% #increase sound volume

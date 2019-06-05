@@ -25,8 +25,12 @@ alias shortterm='export PROMPT_DIRTRIM=1'
 alias mon_office='xrandr --output HDMI-0 --auto --right-of eDP-1-1' # At ZO Office (Temple)
 
 ### Project Workspace setup
+	# Praw/Social Networks Final Project
 alias snp='cd Documents/School/CIS5524-SN/FinalProject/; praw; shortterm; clear'
+	# Artificial Life Terminal Project
 alias alt='cd Documents/Projects/alterm/; shortterm; subl .; clear'
+	# SICP Book Exercises
+alias sicp='cd Documents/Projects/sicp/; shortterm; subl .; clear'
 
 
 
