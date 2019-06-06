@@ -1,23 +1,20 @@
 # Alias file - Loaded by .bashrc
-alias dots='subl ~/.dots'	# For editing all the things.
-
 
 ### 'typical' ls aliases	
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 
-
 ### Random Helpers
 alias sr='ffmpeg -f x11grab  -s 1366x768 -i :0.0 -r 25 -vcodec libx264  output.mkv'
 alias shortterm='export PROMPT_DIRTRIM=1'
 
-
 ### SSH logins
 alias data='ssh data.ist.temple.edu -l tug00038'
 
-
-### Project Workspace Quickstarts
+### Project/Workflow Quickstarts
+	# For editing all these things.
+alias dots='subl ~/.dots'	
 	# Quick Jupyter Notebook
 alias jnb='exec jupyter notebook'
 	# Env for pygame development

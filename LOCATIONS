@@ -14,3 +14,9 @@ config_i3
 config_i3status
 	- To i3's config folder
 	- ln -s ~/.dots/config_i3status ~/.config/i3status/config
+
+scripts/
+	- Each script should be linked to/from /usr/local/bin/
+	- These are things I want to be able to run from dmenu
+	  so they have to scripts/executibles that are found
+	  on the $PATH.
