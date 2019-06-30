@@ -18,5 +18,5 @@ config_i3status
 scripts/
 	- Each script should be linked to/from /usr/local/bin/
 	- These are things I want to be able to run from dmenu
-	  so they have to scripts/executibles that are found
+	  so they have to be scripts/executibles that are found
 	  on the $PATH.
