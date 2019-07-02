@@ -10,7 +10,9 @@ alias sr='ffmpeg -f x11grab  -s 1366x768 -i :0.0 -r 25 -vcodec libx264  output.m
 alias shortterm='export PROMPT_DIRTRIM=1' # makes the term prompt as short as possible-ish
 
 ### SSH logins
-alias data='ssh data.ist.temple.edu -l tug00038'
+alias cis2='ssh cis-linux2.temple.edu  -l tug00038'
+alias data='ssh data.ist.temple.edu    -l tug00038' # Only works on temple net
+alias news='ssh cis-guosrv1.temple.edu -l tug00038' # Only works on temple net
 
 ### Project/Workflow Quickstarts
 	# For editing all these things.
@@ -33,5 +35,6 @@ alias torch='cd ~/Documents/Projects/learntorch; conda activate torch; shortterm
 alias django='cd ~/Documents/Projects/learndjango; conda activate django; shortterm; subl .; clear;'
 	# arCave dev env
 alias arcave='cd ~/Documents/Projects/arCave; conda activate django; shortterm; subl .; clear;'
+
 ### Activating Monitors
 alias mon_office='xrandr --output HDMI-0 --auto --right-of eDP-1-1' # At ZO Office (Temple)
