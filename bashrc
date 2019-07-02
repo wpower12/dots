@@ -93,6 +93,11 @@ export PATH="~/.bin:$PATH"
 export SUDO_EDITOR=/usr/bin/subl
 export EDITOR=/usr/bin/subl
 
+### - Conda init created this block. It might not be totally 'system agnostic'
+#     on a reinstall of dot files, might want to delete this and have conda
+#     redo. Make sure you use the option that leaves the default env OFF by
+#     so you don't waste all those cycles loading all this shit on every term.
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/wpower3/anaconda3/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
