@@ -14,6 +14,9 @@ alias cis2='ssh cis-linux2.temple.edu  -l tug00038'
 alias data='ssh data.ist.temple.edu    -l tug00038' # Only works on temple net
 alias news='ssh cis-guosrv1.temple.edu -l tug00038' # Only works on temple net
 
+### Mounts 
+alias mount_news='sshfs tug00038@129.32.100.63: ~/Mounts/guosrv1/' # News Dataset Server, only on templenet
+
 ### Project/Workflow Quickstarts
 	# For editing all these things.
 alias dots='cd ~/.dots; subl ~/.dots'	
