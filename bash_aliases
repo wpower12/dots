@@ -20,8 +20,6 @@ alias mount_news='sshfs tug00038@129.32.100.63: ~/Mounts/guosrv1/' # News Datase
 ### Project/Workflow Quickstarts
 	# For editing all these things.
 alias dots='cd ~/.dots; subl ~/.dots'	
-	# Quick Jupyter Notebook
-alias jnb='exec jupyter notebook'
 	# Env for pygame development
 alias pge='conda activate pygame_env'    
 	# Env for working with PRAW  
@@ -38,6 +36,12 @@ alias torch='cd ~/Documents/Projects/learntorch; conda activate torch; shortterm
 alias django='cd ~/Documents/Projects/learndjango; conda activate django; shortterm; subl .; clear;'
 	# arCave dev env
 alias arcave='cd ~/Documents/Projects/arCave; conda activate django; shortterm; subl .; clear;'
+	# Py3.5, Jupyter, Scipy env.
+alias scipy='conda activate swre; clear;'
+	# The above, but start a JNB
+alias jnb='conda activate swre; shortterm; jupyter notebook;'
 
 ### Activating Monitors
 alias mon_office='xrandr --output HDMI-0 --auto --right-of eDP-1-1' # At ZO Office (Temple)
+alias mon_home='xrandr --output HDMI-0 --auto --left-of eDP-1-1' # Home desk
+alias mon_rs='xrandr -s 0'
