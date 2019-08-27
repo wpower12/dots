@@ -4,6 +4,7 @@
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+alias lsd='ls -d */'
 
 ### Random Helpers
 alias sr='ffmpeg -f x11grab  -s 1366x768 -i :0.0 -r 25 -vcodec libx264  output.mkv'
