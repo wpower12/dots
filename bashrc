@@ -112,3 +112,11 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+## NVM startup - Turned into aliases bc it lags terminal startup
+export NVM_DIR="$HOME/.nvm"
+alias nvm_start='[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"'  # This loads nvm
+alias nvm_auto= '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"'  # This loads nvm bash_completion
+
+# [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+# [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
