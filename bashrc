@@ -88,6 +88,8 @@ export PATH="~/.misc/gephi-0.9.2/bin:$PATH"
 export PATH="~/.config/i3/layout_scripts:$PATH"
 # Random shit
 export PATH="~/.bin:$PATH"
+# Goddamn MATLAB
+export PATH="/home/wpower3/.bin/MATLAB/R2019a/bin:$PATH"
 
 ### Use Sublime for sudoedit
 export SUDO_EDITOR=/usr/bin/subl
@@ -116,7 +118,7 @@ unset __conda_setup
 ## NVM startup - Turned into aliases bc it lags terminal startup
 export NVM_DIR="$HOME/.nvm"
 alias nvm_start='[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"'  # This loads nvm
-alias nvm_auto= '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"'  # This loads nvm bash_completion
+# alias nvm_auto= '[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"'  # This loads nvm bash_completion
 
 # [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 # [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

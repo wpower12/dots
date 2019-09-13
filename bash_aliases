@@ -43,6 +43,7 @@ alias scipy='conda activate swre; clear;'
 alias jnb='conda activate swre; shortterm; jupyter notebook;'
 
 ### Activating Monitors
-alias mon_office='xrandr --output HDMI-0 --auto --right-of eDP-1-1' # At ZO Office (Temple)
-alias mon_home='xrandr --output HDMI-0 --auto --left-of eDP-1-1' # Home desk
-alias mon_rs='xrandr -s 0'
+alias monrs='xrandr -s 0' # Resets um
+alias monoff='xrandr --output HDMI-0 --auto --right-of eDP-1-1 -o normal' 
+# For portrait mode at home. 
+alias monp='xrandr --output HDMI-0 --auto --left-of eDP-1-1 --rotate left; xrandr --output eDP-1-1 --pos 1080x840' 
