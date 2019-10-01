@@ -20,3 +20,8 @@ scripts/
 	- These are things I want to be able to run from dmenu
 	  so they have to be scripts/executibles that are found
 	  on the $PATH.
+
+Note - This assumes you have some shit installed. Right now this means
+
+ - light - The brightness stuff.
+ - pavol - the PACTL vol scripts. Should be in this repo, though. 

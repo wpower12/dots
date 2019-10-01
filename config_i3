@@ -169,12 +169,16 @@ gaps inner 4
 gaps outer 1
 
 # Mult Buttons
-set $sink_id 0
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume $sink_id +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume $sink_id -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute $sink_id toggle # mute sound
+bindsym XF86AudioRaiseVolume exec pavol up
+bindsym XF86AudioLowerVolume exec pavol down
+bindsym XF86AudioMute exec pavol toggle
+
+# Screen Brightness
+bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
+bindsym XF86MonBrightnessDown exec light -U 5 # decrease screen brightness
+
 
 # Touch Pad config
 # Touch-Tap Enable
