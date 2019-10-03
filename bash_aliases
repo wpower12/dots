@@ -8,8 +8,8 @@ alias lsd='ls -d */'
 
 ### Random Helpers
 alias sr='ffmpeg -f x11grab -s 1366x768 -i :0.0 -r 25 -vcodec libx264  output.mkv'
-alias shortterm='export PROMPT_DIRTRIM=1' # makes the term prompt as short as possible-ish
-
+alias st="export PS1='$ '" # makes the term prompt as short as possible-ish
+alias ft="export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '"
 ### SSH logins
 alias cis2='ssh cis-linux2.temple.edu  -l tug00038'
 alias data='ssh data.ist.temple.edu    -l tug00038' # Only works on temple net
