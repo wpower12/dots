@@ -173,7 +173,8 @@ gaps outer 1
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec pavol up
 bindsym XF86AudioLowerVolume exec pavol down
-bindsym XF86AudioMute exec pavol toggle
+bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle
+bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
 # Screen Brightness
 bindsym XF86MonBrightnessUp exec light -A 5 # increase screen brightness
