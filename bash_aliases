@@ -7,13 +7,17 @@ alias l='ls -CF'
 alias lsd='ls -d */'
 
 ### Random Helpers
-alias sr='ffmpeg -f x11grab -s 1366x768 -i :0.0 -r 25 -vcodec libx264  output.mkv'
+alias sr='ffmpeg -f x11grab -s 1920x1080 -i :0.0 -r 25 -vcodec libx264  output.mkv'
 alias st="export PS1='$ '" # make the term prompt as short as possible-ish
 alias ft="export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '"
 ### SSH logins
 alias cis2='ssh cis-linux2.temple.edu  -l tug00038'
 alias data='ssh data.ist.temple.edu    -l tug00038' # Only works on temple net
 alias news='ssh cis-guosrv1.temple.edu -l tug00038' # Only works on temple net
+
+### Git helpers
+# - repo line count
+alias rlc='git ls-files | xargs wc -l'
 
 ### Mounts 
 alias mount_news='sshfs tug00038@129.32.100.63: ~/Mounts/guosrv1/' # News Dataset Server, only on templenet
